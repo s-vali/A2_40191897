@@ -107,14 +107,12 @@ public class Driver1 {
 			}
 			*/
 			
-		}				
+		}
 		for(int k = 0; k < flyingObjectsArray.length; k++) {
 			if(flyingObjectsArray[k].getClass() == UAV.class || flyingObjectsArray[k].getClass() == MAV.class || flyingObjectsArray[k].getClass() == AgriculturalDrone.class) {
 				counter++;
 			}
 		}
-		//Object[] tempoUAVArray = new Object[counter];
-		//boolean x = false;
 		for(int l = 0; l < flyingObjectsArray.length; l++) {
 			if(flyingObjectsArray[l].getClass() == UAV.class || flyingObjectsArray[l].getClass() == MAV.class || flyingObjectsArray[l].getClass() == AgriculturalDrone.class) {
 				uavNb++;
@@ -125,10 +123,10 @@ public class Driver1 {
 				if(uavNb == counter) {
 					System.out.println("The lowest priced UAV: " + flyingObjectsArray[l].toString());
 				}
-			}	
-			
-			//if highest price equals lowest price then all the ones in between must be equal
-		}
+			}
+				
+				
+		}	
 		if(uavNb == 0) {
 			System.out.println("There are no UAV's in this array.");
 		}
@@ -233,7 +231,7 @@ public class Driver1 {
 		System.out.println();
 		System.out.println("The result of finding the least and most expensive UAV in flyingObjectsArray2 is: ");
 		findLeastAndMostExpensiveUAV(flyingObjectsArray2);
-		System.out.println();
+		System.out.println();		
 		
 		/*
 		 * END OF PROGRAM
