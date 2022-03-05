@@ -79,9 +79,4 @@ public class UAV {
 				return false;
 		}
 	}
-	
-	public static UAV uavForArray(Object o) {
-		UAV currentFlyingObj = (UAV)o;
-		return currentFlyingObj;
-	}
 }
